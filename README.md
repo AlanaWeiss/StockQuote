@@ -1,4 +1,5 @@
-# stock-quote
+# stock-quote 
+ #A17AFF
 
 ## Project setup
 ```

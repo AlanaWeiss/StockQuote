@@ -1,0 +1,43 @@
+.nav {
+  height: 5em;
+  background-color: #A17AFF;
+  display: grid;
+  grid-template-columns: 150px 1fr 90px;
+  grid-template-areas: ". nav-wrapper .";
+  
+  .nav-wrapper {
+    display: flex;
+    grid-area: nav-wrapper;
+    display: inline-grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-areas: "logo . search";
+    
+    .logo {
+      width: 8em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      grid-area: logo;
+      
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .search {
+      grid-area: search;
+      justify-self: end;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      input {
+        height: 30px;
+        border: none;
+        border-radius: 5px;
+        padding: 0 10px;
+      }
+    }
+  }
+}
