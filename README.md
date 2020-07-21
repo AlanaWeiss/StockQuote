@@ -1,5 +1,6 @@
 # stock-quote 
- #A17AFF
+ Self Taught Dev's July project.
+ This project uses Alpha Vantage API to show daily values of Stock Time Series Data about the company searched.
 
 ## Project setup
 ```
@@ -31,5 +32,3 @@ npm run test:e2e
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
