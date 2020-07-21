@@ -5,8 +5,8 @@
         <img src="../../assets/Stonks.png" alt="Stonks" srcset="">
        </div>
       <div class="search">
-        <input type="text">
-        <md-button class="md-raised">Search</md-button>
+        <input v-model="symbol" type="text">
+        <md-button @click="search" class="md-raised">Search</md-button>
      </div>
      </div>
 
@@ -17,8 +17,13 @@
 export default {
   name: 'Nav',
   data: () => ({
-    initial: null,
+    symbol: null,
   }),
+  methods: {
+    search() {
+      this.$emit('symbolSearched', this.symbol);
+    },
+  },
 };
 </script>
 
